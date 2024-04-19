@@ -41,7 +41,7 @@ class DioSettings {
           requestBody: true,
           request: true,
           requestHeader: true,
-          logPrint: (object) => log(
+          logPrint: (object) => print(
             object.toString(),
           ),
         ),

@@ -14,7 +14,6 @@ class HourlyWeather extends StatelessWidget {
     return BlocBuilder<WeatherBloc, WeatherState>(
       builder: (context, state) {
         if (state.forecastStatus == FormzSubmissionStatus.success) {
-          print("item --> ${state.forecast}");
           final items = [0, 8, 16, 24, 32];
           return HourlyWeatherRow(
             weatherDataItems: [
